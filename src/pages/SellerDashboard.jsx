@@ -187,14 +187,15 @@ function SellerDashboard() {
                                     </div>
                                 </div>
                                 <div className="row flex">
-                                    <div className="w-[480px] h-[600px] bg-slate-500 flex relative px-5 ">
-                                        <div className="w-[420px] h-[auto] relative ">
-                                            <div className="table-responsive">
-                                                <div className="dashboard-title mb-5 pt-2">
-                                                    <h3>Sản phẩm nổi bật</h3>
-                                                </div>
+                                    <div className=" col-xxl-6 w-[480px] h-[600px] bg-slate-500 flex relative px-5 ">
+                                        <div className="w-[420px] h-[auto] relative  overflow-auto">
+                                            <div className="table-responsive mt-3">
+
 
                                                 <div className="bg-white rounded-lg overflow-hidden">
+                                                    <div className="dashboard-title mb-5 pt-2 text-[18px] pl-2">
+                                                        <h3>Sản phẩm nổi bật</h3>
+                                                    </div>
                                                     <table className="w-full table">
                                                         <thead className="pt-2 border-b border-solid border-inherit border-0">
                                                             <tr className="text-base font-semibold whitespace-nowrap min-w-[90px]">
@@ -308,51 +309,56 @@ function SellerDashboard() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-xxl-6  w-[480px] h-[600px] bg-slate-500 flex relative px-5">
-                                        <div className="order-tab w-[420px] h-[auto] relative bg-white">
-                                            <div className="dashboard-title mb-4 pt-2">
-                                                <h3>Đơn Hàng Gần Đây</h3>
-                                            </div>
-
-                                            <div className="table-responsive">
+                                    <div className="col-xxl-6 w-[480px] h-[600px] bg-slate-500 flex relative px-5">
+                                        <div className="order-tab w-[420px] h-[600px] relative  mt-3 ">
+                                            <div className="table-responsive bg-white rounded-lg overflow-auto p-2">
+                                                <div className="dashboard-title  mb-5 pt-2 text-[18px] pl-2">
+                                                    <h3>Đơn Hàng Gần Đây</h3>
+                                                </div>
                                                 <table className="table order-table w-full ">
-                                                    <thead>
-                                                        <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
-                                                            <th scope="col">Mã Đơn Hàng</th>
-                                                            <th scope="col">Tên Sản Phẩm</th>
-                                                            <th scope="col">Trạng Thái</th>
+                                                    <thead className="border-b border-solid border-inherit border-0">
+                                                        <tr className="border border-solid border-inherit border-0 text-center table-row align-middle whitespace-nowrap flex items-center">
+                                                            <th className="border border-solid border-inherit border-0" scope="col">Mã Đơn Hàng</th>
+                                                            <th className="border border-solid border-inherit border-0" scope="col">Tên Sản Phẩm</th>
+                                                            <th className="border border-solid border-inherit border-0" scope="col">Trạng Thái</th>
                                                         </tr>
                                                     </thead>
+
                                                     <tbody>
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
-                                                            <td className="product-image">#254834</td>
-                                                            <td>
+                                                            <td className="product-image border border-solid border-inherit border-0">#254834</td>
+                                                            <td className="border border-solid border-inherit border-0">
                                                                 <h6>Choco Chip Cookies</h6>
                                                             </td>
-                                                            <td>
-                                                                <label className="success">Đã Giao Hàng</label>
+                                                            <td className="border border-solid border-inherit border-0">
+                                                                <label className="w-24 h-24 success p-3 px-12 text-xs rounded-full bg-red-400 bg-opacity-10 text-red-400">Đã Giao Hàng</label>
                                                             </td>
                                                         </tr>
 
+
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
-                                                            <td className="product-image">#355678</td>
-                                                            <td>
+                                                            <td className="product-image border border-solid border-inherit border-0">#355678</td>
+                                                            <td className="border border-solid border-inherit border-0">
                                                                 <h6>Premium Butter Cookies</h6>
                                                             </td>
-                                                            <td>
-                                                                <label className="danger">Chờ Xử Lý</label>
+                                                            <td className="border border-solid border-inherit border-0">
+                                                                <label className=" w-24 h-24 success p-3 px-12 text-xs rounded-full bg-emerald-300 bg-opacity-10 text-green-400">Chờ xử lý</label>
                                                             </td>
                                                         </tr>
 
+
+
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
-                                                            <td className="product-image">#647536</td>
-                                                            <td>
+                                                            <td className="product-image border border-solid border-inherit border-0">#647536</td>
+                                                            <td className="border border-solid border-inherit border-0">
                                                                 <h6>Sprinkled Potato Chips</h6>
                                                             </td>
-                                                            <td>
-                                                                <label className="success">Đã Giao Hàng</label>
+                                                            <td className="border border-solid border-inherit border-0">
+                                                                <label className="success p-3 px-12 text-xs rounded-full bg-red-400 bg-opacity-10 text-red-400">Đã Giao Hàng</label>
                                                             </td>
                                                         </tr>
+
+
 
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
                                                             <td className="product-image">#125689</td>
@@ -360,9 +366,10 @@ function SellerDashboard() {
                                                                 <h6>Thuỷ Đặc 1 Lít</h6>
                                                             </td>
                                                             <td>
-                                                                <label className="danger">Chờ Xử Lý</label>
+                                                                <label className="success p-3 px-12 text-xs rounded-full bg-emerald-300 bg-opacity-10 text-green-400">Chờ xử lý</label>
                                                             </td>
                                                         </tr>
+
 
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
                                                             <td className="product-image">#215487</td>
@@ -370,9 +377,11 @@ function SellerDashboard() {
                                                                 <h6>Cơm Nắm Gạo Lứt</h6>
                                                             </td>
                                                             <td>
-                                                                <label className="danger">Chờ Xử Lý</label>
+                                                                <label className="success p-3 px-12 text-xs rounded-full bg-red-400 bg-opacity-10 text-red-400">Đã Giao Hàng</label>
                                                             </td>
                                                         </tr>
+
+
 
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
                                                             <td className="product-image">#365474</td>
@@ -380,9 +389,11 @@ function SellerDashboard() {
                                                                 <h6>Cà Phê Hòa Tan</h6>
                                                             </td>
                                                             <td>
-                                                                <label className="success">Đã Giao Hàng</label>
+                                                                <label className=" success p-3 px-12 text-xs rounded-full bg-emerald-300 bg-opacity-10 text-green-400">Chờ xử lý</label>
                                                             </td>
                                                         </tr>
+
+
 
                                                         <tr className="text-center table-row align-middle whitespace-nowrap flex items-center">
                                                             <td className="product-image">#368415</td>
@@ -390,10 +401,12 @@ function SellerDashboard() {
                                                                 <h6>Que Kê Và Bánh Kê Gạo Lứt</h6>
                                                             </td>
                                                             <td>
-                                                                <label className="danger">Chờ Xử Lý</label>
+                                                                <label className="success p-3 px-12 text-xs rounded-full bg-emerald-300 bg-opacity-10 text-green-400">Chờ xử lý</label>
                                                             </td>
                                                         </tr>
                                                     </tbody>
+
+
                                                 </table>
                                             </div>
                                         </div>
@@ -412,7 +425,7 @@ function SellerDashboard() {
                     </div>
 
                 </div >
-            </div>
+            </div >
         </>
     )
 
