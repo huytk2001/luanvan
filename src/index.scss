@@ -9,7 +9,13 @@
 }
 
 body {
-    background-color: #FFF;
-    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+}
+.user-dashboard-section .dashboard-right-sidebar {
+    background-color: #f8f8f8;
+    padding: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+    border-radius: 8px;
+    height: 100%;
 }

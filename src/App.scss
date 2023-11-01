@@ -1,3 +1,6 @@
+:root {
+    --theme-color: #0da487;
+}
 .text-14px-white {
     color: background;
     font-size: 14px;
@@ -56,4 +59,51 @@
     padding: 12px 15px;
     vertical-align: middle;
     white-space: nowrap;
+}
+// product sellerdashBoAR
+.custome-pagination .pagination {
+    gap: calc(6px + (13 - 6) * ((100vw - 320px) / (1920 - 320)));
+}
+ul {
+    margin-bottom: 0;
+}
+.custome-pagination .pagination .page-item.active .page-link {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    color: #fff;
+}
+
+//
+.container-fluid-lg {
+    padding: 0 calc(12px + (160 - 12) * ((100vw - 320px) / (1920 - 320)));
+}
+// profile
+.custom-gap {
+    gap: calc(15px + (21 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+//setting
+.privacy-box {
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+.btn-md {
+    padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320)))
+        calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+}
+.custom-form-check .form-check-input {
+    width: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+    /* margin-top: 0; */
+}
+.form-check-input:checked[type="radio"] {
+    background-image: url("../src/assets/images/raido-input.png");
+    /* Các thuộc tính khác của hình ảnh */
+}
+//sidebar sellerdAshbarod
+.product.management:active {
+    border-left: 3px solid var(--theme-color);
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--theme-color);
 }

@@ -9,7 +9,7 @@ function SideBar({ handleContentChange }) {
         handleContentChange(content);
     };
     return (
-        <div className="dashboard-left-sidebar flex w-[300px] relative  ">
+        <div className="dashboard-left-sidebar  w-[300px] relative  pr-3 ">
             <div className="bg-slate-100 rounded-lg">
                 <div className="profile-img  z-10">
                     <div className="">
@@ -17,7 +17,7 @@ function SideBar({ handleContentChange }) {
                     </div>
                 </div>
                 <div className="profile-content w-[300px] h-[180px]  z-20 flex relative mt-[-50px]">
-                    <div className="profile-w  h-[180px] pl-4 pr-4 absolute">
+                    <div className="profile-w  h-[180px]  absolute">
                         <div className="  flex justify-center items-center  w-[270px] h-[105px] z-10">
                             <div className="">
                                 <img src={BgStudio} className="w-[93px] h-[93px] bg-gray-200 rounded-full" alt="BgStudio" />
@@ -34,52 +34,54 @@ function SideBar({ handleContentChange }) {
                     </div>
                 </div>
                 <div className="profile-box relative">
-                    <ul className="w-[100%] ">
-                        <li className="flex items-center w-[100%] h-[52px] pl-2">
+
+                    <ul className="w-[100%]  ">
+                        <li className="flex items-center w-[100%] h-[52px] pl-2 product">
                             <button onClick={() => handleButtonClick("dashboard")}>
                                 <i className="fa-solid fa-house  mx-3  "></i>
                                 <a>Trang quản lý </a>
                             </button>
                         </li>
-                        <li className="flex items-center w-[100%] h-[42px] pl-2 ">
+                        <li className="flex items-center w-[100%] h-[42px] pl-2 management">
                             <button onClick={() => handleButtonClick("product")}>
                                 <i className="fa-solid fa-shop  mx-3"></i>
                                 <a>Sản phẩm</a>
                             </button>
                         </li>
-                        <li className="flex items-center w-[100%] h-[42px] pl-2 ">
-                            <button>
+                        <li className="flex items-center w-[100%] h-[42px] pl-2 oder ">
+                            <button onClick={() => handleButtonClick("order")}>
                                 <i className="fa-solid fa-shop  mx-3"></i>
                                 <a>Đơn hàng</a>
                             </button>
 
                         </li>
 
-                        <li className="flex items-center w-[100%] h-[42px] pl-2 ">
-                            <button>
+                        <li className="flex items-center w-[100%] h-[42px] pl-2 profile">
+                            <button onClick={() => handleButtonClick("profile")}>
                                 <i className="fa-solid fa-user  mx-3"></i>
                                 <a>Thông tin</a>
                             </button>
 
                         </li>
 
-                        <li className="flex items-center w-[100%] h-[42px] pl-2 ">
-                            <button>
+                        <li className="flex items-center w-[100%] h-[42px] pl-2 settings ">
+                            <button onClick={() => handleButtonClick("setting")}>
                                 <i className="fa-solid fa-gear  mx-3"></i>
                                 <a>Cài đặt</a>
                             </button>
 
                         </li>
-                        <li className="flex items-center w-[100%] h-[42px] pl-2 ">
+                        <li className="flex items-center w-[100%] h-[42px] pl-2  exit">
                             <button>
                                 <i className="fa-solid fa-arrow-right-from-bracket  mx-3"></i>
                                 <a>Thoát</a>
                             </button>
                         </li>
                     </ul>
+
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
