@@ -19,3 +19,13 @@ body {
     border-radius: 8px;
     height: 100%;
 }
+.contact-title h3::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: aqua;
+    background: var(--theme-color2);
+}

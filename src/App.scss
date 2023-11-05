@@ -1,5 +1,6 @@
 :root {
     --theme-color: #0da487;
+    --theme-color2: linear-gradient(90.56deg, var(--theme-color1) 8.46%, var(--theme-color) 62.97%);
 }
 .text-14px-white {
     color: background;
@@ -138,4 +139,18 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+//contactus
+// .contact-title > h3::after {
+//     content: "";
+//     position: absolute;
+//     width: 70%;
+//     height: 2px;
+//     bottom: -5px;
+//     left: 0;
+//     background: #0da487; /* Sử dụng thuộc tính background */
+// }
+// contact//
+.custom-height {
+    height: calc(1.5em + 0.75rem + 2px);
 }

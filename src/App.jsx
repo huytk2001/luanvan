@@ -7,6 +7,7 @@ import Page404 from './pages/Page404'
 import SellerDashboard from './pages/SellerDashboard'
 import SignIn from './pages/SignIn'
 import Forgot from './pages/Forgot'
+import Intro from './pages/intro'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/intro" element={<Intro />} />
           <Route path="/seller-dashboard" element={<SellerDashboard />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/forgot" element={<Forgot />} />
