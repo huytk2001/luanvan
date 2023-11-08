@@ -154,3 +154,13 @@ ul {
 .custom-height {
     height: calc(1.5em + 0.75rem + 2px);
 }
+// .wapper p {
+//     margin: calc(11px + (16 - 11) * ((100vw - 320px) / (1920 - 320))) auto 0;
+// }
+.vendore-breadscrumb-section {
+    background-image: url(./assets/images/breadcrumb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: calc(52px + (100 - 52) * ((100vw - 320px) / (1920 - 320))) 0px;
+}
