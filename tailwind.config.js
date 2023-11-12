@@ -18,7 +18,9 @@ export default {
         'grayLight2': '#ECECEC',
         'redDark': '#FF7272',
         'redLight': '#FF727226',
-        'orange': '#FFA53B'
+        'orange': '#FFA53B',
+        'theme-color': '#0da487',
+        'them-gray': '#f8f8f8',
       },
     },
   },

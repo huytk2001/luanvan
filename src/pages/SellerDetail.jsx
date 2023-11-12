@@ -1,4 +1,7 @@
 import Header from "../components/common/Header"
+import Product from "../components/SelerDetail/Product"
+import Order from "../components/SellerDashboard/Order"
+import SideBar from "../components/SelerDetail/SideBar"
 export default function SellerDetail() {
     return (<>
         <Header />
@@ -27,8 +30,13 @@ export default function SellerDetail() {
                 </div>
             </div>
         </section>
-        <section>
-
+        <section className="">
+            <div className="px-[120px] py-20">
+                <div className="row flex w-full h-auto ">
+                    <SideBar />
+                    {/* <Order /> */}
+                    <Product />
+                </div></div>
         </section>
     </>)
 }
