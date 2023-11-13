@@ -4,7 +4,7 @@ function Oder() {
         <div className="contail-sell px-2">
             <div className="w-[960px] h-[100%]  bg-slate-400 flex  flex-wrap py-[30px] px-[35px] ">
                 <button className="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none"></button>
-                <div className=" w-[879px] h-[auto] px-[22px]    rounded-md">
+                <div className="">
                     <div className="tab-content " id="pills-tabContent">
                         <div className="dashboard-home flex flex-col">
                             <div className="title relative">

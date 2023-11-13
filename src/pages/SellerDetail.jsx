@@ -32,7 +32,7 @@ export default function SellerDetail() {
         </section>
         <section className="">
             <div className="px-[120px] py-20">
-                <div className="row flex w-full h-auto ">
+                <div className="row flex  h-auto ">
                     <SideBar />
                     {/* <Order /> */}
                     <Product />
